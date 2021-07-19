@@ -1,30 +1,48 @@
 // Color
-$color-primary: #55c57a; //green
-$color-primary-light:#7ed56f; // green-light
-$color-primary-dark: #28b485; // green-dark
+$color-primary:#FFCD1E;
+$color-primary-light:#FFB30E;
+$color-primary-dark:#FFB800;
 
-$color-secondary-light:#ffb900;
-$color-secondary-dark: #ff7730;
+$color-secondary-light:#FFAE00;
+$color-secondary-dark: #F17228;
 
-$color-tertiary-light:#2998ff;
-$color-tertiary-dark: #5643fa;
-
-$color-grey-light: #f7f7f7;
-$color-grey-light-2: #eee;
-$color-grey-light-3: #333;
-
-$color-grey-dark: #777;
-$color-grey-dark-2: #999;
-$color-grey-dark-3: #333;
+$color-grey-dark: #424242;
+$color-grey-dark-1: #212121;
 
 $color-white: #fff;
 $color-black: #000;
 
 // Font-size
-$default-font-size: 1.6rem;
+$default-font-size: 1.8rem;
+$fs-1:2.2rem;
+$fs-2:2.8rem;
+$fs-3:3.5rem;
+$fs-4:4.3rem;
+$fs-5:6.8rem;
+$fs-6:8.8rem;
+
+// Font-weight
+$default-font-weight: 400;
+$fw-1: 700;
+$fw-2: 900;
+
+// Line height;
+$default-line-height: 1.8rem;
+$line-height-1: 2.25rem;
+$line-height-2: 2.52rem;
+$line-height-3: 2.64rem;
+$line-height-4: 4.3rem;
+$line-height-5: 4.8rem;
+$line-height-6: 7.28rem;
 
 // dimension
-$grip-width : 114rem;
+$grip-width : 148rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-medium: 7rem;
 $gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
+
+// margin
+$margin-large: 3.2rem;
+$margin-medium: 1.6rem;
+$margin-small: 1.4rem;
