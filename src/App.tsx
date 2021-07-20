@@ -1,12 +1,12 @@
 import { Provider } from "react-redux";
 import { store } from "./states";
-import CategoriesList from "./components/CategoriesList";
+import HomePage from "./pages/HomePage";
 import "./style/main.scss";
 
 const App: React.FC = () => {
   return (
     <Provider store={store}>
-      <CategoriesList />
+      <HomePage />
     </Provider>
   );
 };
