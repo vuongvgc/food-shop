@@ -39,12 +39,9 @@
             background-color: $color-white;
             border: none;
             box-shadow: 0px 5px 10px 0px #FFAE0042;
-            padding: 14px 24px;
+            padding: 1.4rem 2.4rem;
 
             a {
-                justify-content: center;
-                align-items: center;
-                font-weight: 700;
                 @include nav-link($color-primary-dark, $color-white, $default-font-size, $fw-1)
             }
 

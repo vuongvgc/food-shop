@@ -5,6 +5,8 @@
     font-weight: $fw;
     text-decoration: none;
     text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 @mixin style-text($fs, $fw, $color) {
