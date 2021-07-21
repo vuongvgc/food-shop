@@ -32,17 +32,21 @@
             margin: 0 9px;
             justify-content: center;
             align-items: center;
+            margin-right: 3.2rem;
         }
 
         .button-login {
             background-color: $color-white;
-            color: $color-primary-dark;
             border: none;
-            justify-content: center;
-            align-items: center;
-            box-shadow: 0px 20px 40px 0px #FFAE004A;
             box-shadow: 0px 5px 10px 0px #FFAE0042;
-            padding: 8px 15px;
+            padding: 14px 24px;
+
+            a {
+                justify-content: center;
+                align-items: center;
+                font-weight: 700;
+                @include nav-link($color-primary-dark, $color-white, $default-font-size, $fw-1)
+            }
 
         }
     }

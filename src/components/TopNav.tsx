@@ -33,15 +33,17 @@ const TopNav: React.FC = () => {
           </p>
         </div>
         <div>
-          <button className=" row button-login">
-            <div>
-              <img
-                className="icon-small"
-                src="./img/icon/user.png"
-                alt="search"
-              />
-            </div>
-            <div>Login</div>
+          <button className="button-login">
+            <a className="row" href="/">
+              <div>
+                <img
+                  className="icon-small"
+                  src="./img/icon/user.png"
+                  alt="search"
+                />
+              </div>
+              <div>Login</div>
+            </a>
           </button>
         </div>
       </div>
