@@ -47,7 +47,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </div>
-      <div className="header-right__box">
+      <div className="col-1-of-3 header-right__box">
         <div className="header-image">
           <img src="./img/food-hero.png" alt="food-hero" />
         </div>

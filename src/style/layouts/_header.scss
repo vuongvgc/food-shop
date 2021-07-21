@@ -2,10 +2,10 @@
     background-color: $color-primary;
 
     .header-left__box {
+        font-family: 'Source Sans Pro', sans-serif;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        font-family: 'Source Sans Pro', sans-serif;
 
         .header-left__content {
             width: 88%;
@@ -41,13 +41,17 @@
                     align-items: center;
 
                     .header-input {
+                        font-size: $fs-1;
+                        background: $color-grey-light;
                         width: 70%;
+                        padding: 1.2rem;
                         margin-right: 1.6rem;
                         margin-bottom: 0;
-                        background: $color-grey-light;
                         border-radius: 8px;
-                        padding: 1.2rem;
-                        font-size: $fs-1;
+
+                        img {
+                            padding: 1rem;
+                        }
 
                         input {
                             width: 85%;
@@ -55,6 +59,10 @@
                             padding: 4px;
                             border: none;
                             background-color: inherit;
+
+                            &:focus {
+                                outline: none;
+                            }
                         }
                     }
 
@@ -66,8 +74,6 @@
 
                         a {
                             font-family: 'Source Sans Pro', sans-serif;
-                            justify-content: center;
-                            align-items: center;
                             padding: 2.1rem 4.8rem;
                             @include nav-link($color-white, inherit, $default-font-size, $fw-1);
 
@@ -83,7 +89,10 @@
 
     }
 
-    .header-image {
-        margin-top: 20rem;
+    .header-right__box {
+        .header-image {
+            margin-top: 20rem;
+        }
     }
+
 }
