@@ -1,3 +1,20 @@
+@mixin nav-link($color, $bg-color, $fs, $fw) {
+    color: $color;
+    background-color: $bg-color;
+    font-size: $fs;
+    font-weight: $fw;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin style-text($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
 @mixin absCenter {
     position: absolute;
     top: 50%;

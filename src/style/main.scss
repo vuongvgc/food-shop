@@ -9,36 +9,14 @@
 @import "base/typography";
 @import "base/utilities";
 
+// Components
+@import "components/navbar";
+@import "components/button";
+
 // layout
-@import "layouts/header";
 @import "layouts/grids";
+@import "layouts/header";
 @import "layouts/footer";
 
-
-// Components
+// Page
 @import "pages/home";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

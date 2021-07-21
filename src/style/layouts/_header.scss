@@ -1,1 +1,98 @@
-.header {}
+.header-hero__box {
+    background-color: $color-primary;
+
+    .header-left__box {
+        font-family: 'Source Sans Pro', sans-serif;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .header-left__content {
+            width: 88%;
+
+            .header-left__top {
+                p {
+                    @include style-text($fs-1, $default-font-weight, $color-grey-dark-2);
+                    line-height: 120%;
+                    padding: 8px 0;
+                }
+            }
+
+            .header-left__bottom {
+                background-color: $color-white;
+                filter: drop-shadow(0px 5px 10px rgba(255, 174, 0, 0.26)), drop-shadow(0px 20px 40px rgba(255, 174, 0, 0.29));
+                border-radius: 1.6rem;
+                padding: 2.4rem;
+
+                .header-delivery,
+                .header-pickup {
+                    padding: 1rem 2.4rem;
+                    font-weight: $fw-1;
+                }
+
+                .header-delivery {
+                    background: rgba(241, 114, 40, 0.1);
+                    color: $color-secondary-dark;
+                    margin-right: 8px;
+                    border-radius: 5px;
+                }
+
+                .header-form__box {
+                    align-items: center;
+
+                    .header-input {
+                        font-size: $fs-1;
+                        background: $color-grey-light;
+                        width: 70%;
+                        padding: 1.2rem;
+                        margin-right: 1.6rem;
+                        margin-bottom: 0;
+                        border-radius: 8px;
+
+                        img {
+                            padding: 1rem;
+                        }
+
+                        input {
+                            width: 85%;
+                            font-size: $default-font-size;
+                            padding: 4px;
+                            border: none;
+                            background-color: inherit;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .header-button {
+                        width: 30%;
+                        border: none;
+                        border-radius: 1.6rem;
+                        background: linear-gradient(95.71deg, #FF7A7A -39.64%, #F75900 135.31%);
+
+                        a {
+                            font-family: 'Source Sans Pro', sans-serif;
+                            padding: 2.1rem 4.8rem;
+                            @include nav-link($color-white, inherit, $default-font-size, $fw-1);
+
+
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+
+    }
+
+    .header-right__box {
+        .header-image {
+            margin-top: 20rem;
+        }
+    }
+
+}
