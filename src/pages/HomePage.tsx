@@ -12,10 +12,14 @@ import CTA from "../components/CTA";
 import Footer from "../layouts/Footer";
 const HomePage: React.FC = () => {
   return (
-    <div className="container">
+    <div>
       <header>
-        <TopNav />
-        <Header />
+        <div className="container">
+          <TopNav />
+        </div>
+        <div className="container-fluid header-hero__box">
+          <Header />
+        </div>
       </header>
       <section>
         <FlashDeals />

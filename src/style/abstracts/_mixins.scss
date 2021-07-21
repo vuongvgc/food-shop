@@ -7,6 +7,12 @@
     text-align: center;
 }
 
+@mixin style-text($fs, $fw, $color) {
+    font-size: $fs;
+    font-weight: $fw;
+    color: $color;
+}
+
 @mixin absCenter {
     position: absolute;
     top: 50%;
