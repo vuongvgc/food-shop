@@ -1,0 +1,67 @@
+.flash-deals__box {
+    justify-content: space-between;
+    margin: $gutter-vertical-large 0;
+
+    .flash-deal__item {
+        border: 1px solid rgba(0, 0, 0, 1);
+
+        .flash-deal__image {
+            position: relative;
+            border-radius: inherit;
+            margin-bottom: $margin-large;
+
+            img {
+                border-radius: 1.6rem;
+                width: 100%;
+                height: auto;
+            }
+
+            .flash-deal__discount {
+                position: absolute;
+                left: 0;
+                bottom: 0;
+                width: 140px;
+                height: 83px;
+                padding: 1rem 1.8rem;
+                background: $color-primary-light;
+                border-radius: 0px 32px 0px 0px;
+                color: $color-white;
+                justify-content: center;
+                align-items: center;
+
+                h3 {
+                    @include style-text($fs-5, $fw-1, $color-white);
+                    line-height: $line-height-6;
+                }
+
+                .discount-unit {
+                    @include style-text($fs-3, $fw-1, $color-white);
+                    line-height: $fs-4
+                }
+
+                .discount-status {
+                    @include style-text($fs-1, $default-font-weight, $color-white);
+                    line-height: $line-height-3;
+                }
+            }
+        }
+
+        .flash-deal__text {
+            h3 {
+                @include style-text($fs-1, $fw-1, $color-grey-dark);
+                line-height: $line-height-3;
+                margin-bottom: $margin-small;
+
+            }
+
+            p {
+                @include style-text($fs-1, $fw-1, $color-secondary-dark);
+                background: #F1722833;
+                display: inline-block;
+                border-radius: 8px;
+                line-height: $line-height-3;
+                padding: 8px 16px;
+            }
+        }
+    }
+}
