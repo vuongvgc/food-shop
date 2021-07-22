@@ -4,7 +4,31 @@
     background: linear-gradient(180deg, rgba(255, 206, 103, 0.22) -42.47%, rgba(253, 237, 202, 0) 100%);
 
     .Work-features__box {
-        width: 68%;
+        width: 70%;
         margin: $gutter-vertical-large auto;
+        text-align: center;
+
+        .work-feature__item {
+            height: 30rem;
+            position: relative;
+
+            img {
+                width: 50%;
+                height: auto;
+                margin: 0 auto;
+            }
+
+            .work-feature__text {
+                position: absolute;
+                bottom: 0;
+
+                p {
+                    font-family: 'Open Sans', sans-serif;
+                    @include style-text($default-font-size, $default-font-size, $color-grey-dark-3);
+                    line-height: $line-height-2;
+                }
+            }
+
+        }
     }
 }
