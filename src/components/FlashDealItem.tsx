@@ -1,10 +1,19 @@
-const FlashDealItem: React.FC = () => {
+interface flashDeal {
+  meal: {
+    name: string;
+    image: string;
+    discount: number;
+    expired: number;
+  };
+}
+const FlashDealItem: React.FC<flashDeal> = ({ meal }) => {
+  const { name, image, discount, expired } = meal;
   return (
     <div className="flash-deal__item">
       <div className="flash-deal__image">
-        <img src="./img/food-flash-deals-1.png" alt="Greys Vage" />
+        <img src={image} alt={name} />
         <div className="row flash-deal__discount">
-          <h3>15</h3>
+          <h3>{discount}</h3>
           <div>
             <p className="discount-unit">%</p>
             <p className="discount-status">Off</p>
@@ -12,8 +21,8 @@ const FlashDealItem: React.FC = () => {
         </div>
       </div>
       <div className="flash-deal__text">
-        <h3>Greys Vage</h3>
-        <p>6 Days Remaining</p>
+        <h3>{name}</h3>
+        <p>{expired} Days Remaining</p>
       </div>
     </div>
   );
