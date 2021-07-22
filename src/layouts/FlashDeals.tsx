@@ -1,4 +1,4 @@
-import FlashDealItem from "./FlashDealItem";
+import FlashDealItem from "../components/FlashDealItem";
 import { flashDealList } from "../assets/flashDealList";
 const FlashDeals: React.FC = () => {
   console.log(flashDealList);

@@ -1,14 +1,14 @@
 import TopNav from "../components/TopNav";
 import Header from "../layouts/Header";
-import FlashDeals from "../components/FlashDeals";
-import HowDoesItWork from "../components/HowDoesItWork";
-import PopularMeals from "../components/PopularMeals";
-import FeaturedRestaurant from "../components/FeaturedRestaurant";
-import SearchFood from "../components/SearchFood";
-import FeaturesFood from "../components/FeaturesFood";
-import AppDownload from "../components/AppDownload";
-import DetailsFood from "../components/DetailsFood";
-import CTA from "../components/CTA";
+import FlashDeals from "../layouts/FlashDeals";
+import HowDoesItWork from "../layouts/HowDoesItWork";
+import PopularMeals from "../layouts/PopularMeals";
+import FeaturedRestaurant from "../layouts/FeaturedRestaurant";
+import SearchFood from "../layouts/SearchFood";
+import FeaturesFood from "../layouts/FeaturesFood";
+import AppDownload from "../layouts/AppDownload";
+import DetailsFood from "../layouts/DetailsFood";
+import CTA from "../layouts/CTA";
 import Footer from "../layouts/Footer";
 const HomePage: React.FC = () => {
   return (
@@ -24,7 +24,7 @@ const HomePage: React.FC = () => {
       <section className="container">
         <FlashDeals />
       </section>
-      <section>
+      <section className="container-fluid">
         <HowDoesItWork />
       </section>
       <section>

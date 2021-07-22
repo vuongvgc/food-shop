@@ -16,20 +16,23 @@ body {
 }
 
 .header-secondary {
-    // font-size: 3.5rem;
-    // font-weight: 700;
-    // text-transform: uppercase;
-    // display: inline-block;
-    // letter-spacing: .2rem;
-    // color: $color-primary-dark;
-    // transition: all .2s;
-    // &:hover {
-    //     transform: skewY(2deg) skewX(15deg) scale(1.1);
-    //     text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
-    // }
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: $line-height-5;
+    margin-bottom: $gutter-vertical-medium;
+    text-align: center;
+    @include style-text($fs-4, $fw-1, $color-secondary-dark);
+
 }
 
-.header-tertiary {}
+.header-tertiary {
+    font-family: 'Source Sans Pro', sans-serif;
+    line-height: $line-height-3;
+    margin-bottom: 1rem;
+    text-align: center;
+    @include style-text($fs-1, $fw-1, $color-grey-dark);
+    text-align: center;
+
+}
 
 .paragraph {
     font-size: $default-font-size;
