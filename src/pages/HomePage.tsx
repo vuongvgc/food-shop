@@ -21,7 +21,7 @@ const HomePage: React.FC = () => {
           <Header />
         </div>
       </header>
-      <section>
+      <section className="container">
         <FlashDeals />
       </section>
       <section>
