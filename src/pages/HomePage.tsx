@@ -27,7 +27,7 @@ const HomePage: React.FC = () => {
       <section className="container-fluid">
         <HowDoesItWork />
       </section>
-      <section>
+      <section className="container-fluid">
         <PopularMeals />
       </section>
       <section>
