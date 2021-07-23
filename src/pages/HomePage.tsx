@@ -30,7 +30,7 @@ const HomePage: React.FC = () => {
       <section className="container-fluid">
         <PopularMeals />
       </section>
-      <section>
+      <section className="container">
         <FeaturedRestaurant />
       </section>
       <section>
