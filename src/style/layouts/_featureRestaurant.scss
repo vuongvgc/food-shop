@@ -115,13 +115,14 @@
             border: none;
             border-radius: 14px;
             font-family: 'Source Sans Pro', sans-serif;
-            @include style-text($default-font-size, $fw-1, $color-white) font-style: normal;
+            @include style-text($default-font-size, $fw-1, $color-white);
             line-height: 100%;
             text-align: center;
 
             img {
                 font-size: 1.8px;
                 margin: 0 8px;
+                border-radius: inherit
             }
         }
     }
