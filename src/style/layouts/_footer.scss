@@ -1,2 +1,46 @@
-.footer {
+footer {
+    .cta__box {
+        position: relative;
+
+        .cta__banner {
+            width: 100%;
+            height: auto;
+        }
+
+        .cta__content {
+            position: absolute;
+            width: 72.8rem;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+            h2 {
+                @include style-text(5.7rem, $fw-2, $color-white);
+                line-height: 5.6rem;
+                text-align: center;
+                margin-bottom: 6.2rem;
+            }
+
+            button {
+                background: linear-gradient(93.41deg, #F17228 -5.63%, #F15E28 100.8%);
+                border: none;
+                border-radius: 8px;
+
+                a {
+                    display: block;
+                    font-family: 'Source Sans Pro', sans-serif;
+                    line-height: 1.8rem;
+                    padding: 2.1rem 4.8rem;
+                    @include nav-link($color-white, inherit, $default-font-size, $fw-2);
+
+                    img {
+                        margin: 0 1rem;
+                    }
+
+                }
+            }
+
+        }
+    }
 }
