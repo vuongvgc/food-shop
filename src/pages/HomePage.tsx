@@ -38,7 +38,7 @@ const HomePage: React.FC = () => {
         <FeaturesFood />
         <AppDownload />
       </section>
-      <section>
+      <section className="container">
         <DetailsFood />
       </section>
       <footer>
