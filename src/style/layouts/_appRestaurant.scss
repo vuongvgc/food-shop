@@ -1,0 +1,35 @@
+.app-restaurant__box {
+    background: linear-gradient(261.24deg, #FFAE00 63.85%, #FF8A00 111.94%);
+
+    .app-restaurant__content {
+        width: 63%;
+        margin: 0 auto;
+        height: 58.9rem;
+
+
+        .app-restaurant__image {
+            position: relative;
+            width: 70%;
+
+            .app-restaurant__image-1 {
+                position: absolute;
+                bottom: -1rem;
+                width: 31.9rem;
+            }
+
+            .app-restaurant__image-2 {
+                position: absolute;
+                width: 31.9rem;
+                bottom: -1rem;
+                left: 27rem;
+            }
+
+            .app-restaurant__text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+
+}
