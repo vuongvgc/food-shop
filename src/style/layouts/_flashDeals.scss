@@ -20,28 +20,51 @@
                 position: absolute;
                 left: 0;
                 bottom: 0;
-                width: 140px;
-                height: 83px;
+                width: 14rem;
+                height: 8.3rem;
                 padding: 1rem 1.8rem;
                 background: $color-primary-light;
-                border-radius: 0px 32px 0px 0px;
+                border-radius: 0px 3.2rem 0px 0px;
                 color: $color-white;
                 justify-content: center;
                 align-items: center;
 
+                @include respond(tab-port) {
+                    width: 10rem;
+                    height: 6.3rem;
+                }
+
                 h3 {
                     @include style-text($fs-5, $fw-1, $color-white);
                     line-height: $line-height-6;
+
+                    @include respond(tab-port) {
+                        font-size: $fs-4;
+                        line-height: $line-height-5;
+
+                    }
                 }
 
                 .discount-unit {
                     @include style-text($fs-3, $fw-1, $color-white);
-                    line-height: $fs-4
+                    line-height: $fs-4;
+
+                    @include respond(tab-port) {
+                        font-size: $fs-1;
+                        line-height: $line-height-2;
+
+                    }
                 }
 
                 .discount-status {
                     @include style-text($fs-1, $default-font-weight, $color-white);
                     line-height: $line-height-3;
+
+                    @include respond(tab-port) {
+                        font-size: $default-font-size;
+                        line-height: $line-height-2;
+
+                    }
                 }
             }
         }
@@ -58,9 +81,9 @@
                 @include style-text($fs-1, $fw-1, $color-secondary-dark);
                 background: #F1722833;
                 display: inline-block;
-                border-radius: 8px;
+                border-radius: .8rem;
                 line-height: $line-height-3;
-                padding: 8px 16px;
+                padding: .8rem 1.6rem;
             }
         }
     }
