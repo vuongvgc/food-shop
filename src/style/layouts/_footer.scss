@@ -117,6 +117,11 @@ footer {
                 .footer-nav__bottom-form {
                     align-items: stretch;
 
+                    @include respond(tab-land) {
+                        display: inline-block;
+
+                    }
+
                     .footer-nav__bottom-input {
                         align-items: center;
                         background: $color-grey-dark;
@@ -124,6 +129,12 @@ footer {
                         border-radius: 8px;
                         margin-right: 1.6rem;
                         margin-bottom: 0rem;
+
+                        @include respond(tab-land) {
+                            padding: 1.2rem;
+                            margin-right: 1rem;
+                            margin-bottom: 1rem;
+                        }
 
                         input {
                             font-family: 'Open Sans', sans-serif;
@@ -148,6 +159,11 @@ footer {
                         font-weight: $fw-1;
                         color: $color-white;
                         border-radius: 8px;
+
+                        @include respond(tab-land) {
+                            padding: 1.2rem 2.4rem;
+
+                        }
 
                     }
                 }

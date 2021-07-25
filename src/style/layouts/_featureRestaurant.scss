@@ -3,6 +3,12 @@
 
     .restaurant-top__box {
         margin-bottom: 6.4rem;
+
+        @include respond(tab-port) {
+            .col-1-of-4 {
+                width: 50%;
+            }
+        }
     }
 
     .restaurant-bottom__box {
@@ -48,6 +54,20 @@
                     line-height: $line-height-2;
                 }
 
+                @include respond(tab-land) {
+                    display: block;
+                    top: 1rem;
+                    left: 1rem;
+
+                    img {
+                        height: 20%;
+                        width: auto;
+                    }
+
+                    @include style-text($default-font-size, $fw-1, $color-white);
+                    line-height: $line-height-2;
+                }
+
                 .item__discount,
                 .item__time {
                     padding: 8px 16px;
@@ -56,12 +76,21 @@
                     img {
                         margin-right: 10px;
 
+                        @include respond(tab-land) {
+                            display: none;
+                        }
+
                     }
                 }
 
                 .item__discount {
                     background: $color-secondary-dark;
                     margin-right: 8px;
+
+                    @include respond(tab-land) {
+                        margin-bottom: 1rem;
+                    }
+
                 }
 
                 .item__time {

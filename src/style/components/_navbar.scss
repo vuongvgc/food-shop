@@ -5,6 +5,12 @@
     font-weight: 400;
     margin: $gutter-vertical 0;
 
+    @include respond(tab-port) {
+        .col-1-of-4 {
+            width: 50%;
+        }
+    }
+
     .logo_box {
         width: 80%;
 
@@ -21,11 +27,17 @@
         span {
             font-weight: 400;
         }
+
+        @include respond(tab-port) {
+            display: none;
+        }
     }
 
     .nav-bar__button {
         justify-content: flex-end;
         align-items: center;
+
+
 
         .nav-search {
             font-weight: 700;

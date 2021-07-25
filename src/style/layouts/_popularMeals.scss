@@ -56,6 +56,15 @@
         border-radius: 92px;
         font-size: 7.6rem;
 
+        @include respond(tab-land) {
+            font-size: 5.6rem;
+
+        }
+
+        @include respond(tab-port) {
+            display: none;
+        }
+
     }
 
     .slick-prev {
