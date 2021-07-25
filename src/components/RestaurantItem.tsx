@@ -11,7 +11,6 @@ interface restaurant {
 }
 const RestaurantItem: React.FC<restaurant> = ({ restaurant }) => {
   const { name, logo, image, isOpen, discount, delivery, review } = restaurant;
-  console.log(isOpen);
   return (
     <div className="restaurant-item__box">
       <div className="restaurant-item__image">

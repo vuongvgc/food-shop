@@ -7,7 +7,7 @@ const NavListFooter: React.FC<navProps> = ({ nav }) => {
       <ul className="nav-list">
         {nav.map((item) => {
           return (
-            <li className="nav-item" key="item">
+            <li className="nav-item" key={item}>
               <a className="nav-link" href="/">
                 {item}
               </a>
