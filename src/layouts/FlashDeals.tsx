@@ -1,7 +1,6 @@
 import FlashDealItem from "../components/FlashDealItem";
 import { flashDealList } from "../assets/flashDealList";
 const FlashDeals: React.FC = () => {
-  console.log(flashDealList);
   return (
     <div className="row flash-deals__box">
       {flashDealList.map((meal) => {

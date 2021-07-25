@@ -5,7 +5,6 @@ const SearchFoodCarousel: React.FC = () => {
   const { loading, categories, error } = useTypedSelector(
     (state) => state.categoriesMeal
   );
-  console.log(loading, categories, error);
   const settings = {
     dots: true,
     infinite: true,
@@ -23,7 +22,7 @@ const SearchFoodCarousel: React.FC = () => {
             const { strCategory, strCategoryThumb } = item;
             const food = { name: strCategory, image: strCategoryThumb };
             return (
-              <div>
+              <div key={food.name}>
                 <FoodItem food={food} />
               </div>
             );
