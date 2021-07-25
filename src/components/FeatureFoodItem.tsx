@@ -1,11 +1,15 @@
-const FeatureFoodItem: React.FC = () => {
+interface FeatureProps {
+  feature: string;
+  image: string;
+}
+const FeatureFoodItem: React.FC<FeatureProps> = ({ feature, image }) => {
   return (
-    <div className="row feature-food-tem__box">
+    <div className="row feature-food-item__box">
       <div>
-        <img src="./img/icon/daily-discound.png" alt="daily-discound" />
+        <img src={image} alt={feature} />
       </div>
       <div>
-        <h3>Daily Discounts</h3>
+        <h3>{feature}</h3>
       </div>
     </div>
   );
