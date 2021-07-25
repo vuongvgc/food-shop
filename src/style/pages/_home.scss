@@ -1,6 +1,10 @@
 .container {
     width: $grip-width;
     margin: 0 auto;
+
+    @include respond(small-desktop) {
+        width: 80%;
+    }
 }
 
 .container-fluid {

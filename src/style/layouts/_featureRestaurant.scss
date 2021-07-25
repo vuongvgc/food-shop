@@ -21,6 +21,8 @@
 
             img {
                 border-radius: inherit;
+                width: 100%;
+                height: auto;
             }
 
             .restaurant-item__tag {
@@ -31,6 +33,21 @@
                 @include style-text($fs-1, $fw-1, $color-white);
                 line-height: $line-height-3;
 
+                img {
+                    height: 50%;
+                    width: auto;
+                }
+
+                @include respond(small-desktop) {
+                    img {
+                        height: 50%;
+                        width: auto;
+                    }
+
+                    @include style-text($default-font-size, $fw-1, $color-white);
+                    line-height: $line-height-2;
+                }
+
                 .item__discount,
                 .item__time {
                     padding: 8px 16px;
@@ -38,6 +55,7 @@
 
                     img {
                         margin-right: 10px;
+
                     }
                 }
 

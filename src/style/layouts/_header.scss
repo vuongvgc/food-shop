@@ -92,6 +92,11 @@
     .header-right__box {
         .header-image {
             margin-top: 20rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
     }
 

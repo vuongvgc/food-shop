@@ -8,6 +8,14 @@
 
 html {
     font-size: 62.5%; // 1rem = 10px
+
+    @include respond(small-desktop) {
+        font-size: 40%;
+    }
+
+    @include respond(desktop) {
+        font-size: 50%;
+    }
 }
 
 body {
