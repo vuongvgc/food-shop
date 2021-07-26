@@ -6,7 +6,7 @@ import PopularMeals from "../layouts/PopularMeals";
 import FeaturedRestaurant from "../layouts/FeaturedRestaurant";
 import SearchFood from "../layouts/SearchFood";
 import FeaturesFood from "../layouts/FeaturesFood";
-import AppDownload from "../layouts/AppDownload";
+// import AppDownload from "../layouts/AppDownload";
 import DetailsFood from "../layouts/DetailsFood";
 import CTA from "../layouts/CTA";
 import Footer from "../layouts/Footer";
@@ -36,7 +36,7 @@ const HomePage: React.FC = () => {
       <section>
         <SearchFood />
         <FeaturesFood />
-        <AppDownload />
+        {/* <AppDownload /> */}
       </section>
       <section className="container">
         <DetailsFood />
